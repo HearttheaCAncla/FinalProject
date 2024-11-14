@@ -4,6 +4,7 @@ body {
     margin:0;
     background-color:#EDEDE9;
     overflow-x: hidden;
+    padding-bottom:300px;
 }
 
 .WH {
@@ -114,17 +115,29 @@ nav .active {
     line-height:50px;
     border:none;
     position:relative;
-    left:660px;
+    left:0px;
+    top:50px;
     width:12%;
-    transition-duration: 0.4s;
-    
 }
 
-.more:hover {
+.more:focus {
     background-color:#BCB8B1;
     color:black;
 }
 
+video {
+    position:absolute;
+    margin-top:190px;
+    right:130px;
+}
+
+.multi{
+    display:none;
+}
+
+.more:focus + .multi {
+    display:inline;
+}
 
 /* FUNDRAISERS */
 h1 {
