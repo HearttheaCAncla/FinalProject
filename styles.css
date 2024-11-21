@@ -59,8 +59,6 @@ nav img {
 nav img:hover {
     transform:rotate(-360deg);
 }
-    
-}
 
 nav p {
     float:left;
