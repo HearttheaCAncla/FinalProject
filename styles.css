@@ -1,10 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+html {
+    height:100%;
+}
+
 body {
     margin:0;
     background-color:#EDEDE9;
     overflow-x: hidden;
-    padding-bottom:300px;
+
+    min-height:100vh;
+    display:flex;
+    flex-direction: column;
+}
+
+::selection {
+    background-color:#a08b89
 }
 
 .WH {
@@ -113,38 +124,29 @@ nav .active {
     font-size:20px;
 }
 
-.more {
+span.more {
     clear:left;
     background-color:#8A817C;
     color:white;
+    padding:10px;
     font-size:25px;
-    line-height:50px;
     border:none;
     position:relative;
     left:0px;
     top:50px;
     width:12%;
-    
 }
 
-.more:focus {
+.more:hover {
     background-color:#BCB8B1;
     color:black;
 }
-
 video {
-    position:absolute;
-    margin-top:190px;
-    right:130px;
+    position:relative;
+    left:690px;
+    bottom:100px;
 }
 
-.multi{
-    display:none;
-}
-
-.more:focus + .multi {
-    display:inline;
-}
 
 /* FUNDRAISERS */
 h1 {
@@ -173,7 +175,7 @@ a{
 
 p a:hover {
     text-decoration-line:underline;
-    color:#5661db;
+    color:#5762db;
 }
 
 .desc{
@@ -215,15 +217,17 @@ p a:hover {
     height:600px;
 }
 
+
 /*FOOTER*/
 footer {
     background-color: #999ea5;
-    
+    margin-top:auto;
 }
 
 .footerc {
     width:100%;
     padding:20px 30px 100px;
+    
 }
 
 .socials {
@@ -270,20 +274,55 @@ footer {
 }
 
 .extrlinks ul li a{
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size:25px;
     margin:20px;
     color:white;
     text-decoration: none;
     font-size:22px;
     text-align:center;
-    
+}
+
+.extrlinks ul li a:hover {
+    color:black;
+}
+
+div.fb:hover {
+    background: url('pics/sprite.png') no-repeat -330px -640px;
+	width: 77px;
+	height: 77px;
+}
+
+div.insta:hover {
+	background: url('pics/sprite.png') no-repeat -972px -642px;
+	width: 77px;
+	height: 76px;
+}
+
+div.twit:hover {
+	background: url('pics/sprite.png') no-repeat -845px -642px;
+	width: 77px;
+	height: 76px;
+}
+
+div.google:hover {
+	background: url('pics/sprite.png') no-repeat -200px -640px;
+	width: 77px;
+	height: 77px;
 }
 
 /*3rd page*/
+section.main {
+    display:flex;
+    justify-content:center;
+    width:100%;
+}
+
 section.main div {
     width:900px;
     height:500px;
-    margin-left:auto;
-    margin-right:auto;
+    margin:30px auto;
     padding-top:30px;
 }
 section.main img {
@@ -295,28 +334,100 @@ section.main img {
     transition-timing-function: ease-in-out;
 }
 
-section.main img:hover {
-    transform:scale(1.05)
-}
-
-p.headline {
+a.headline {
     font-family: "Montserrat";
     font-weight: 400;
     font-size:25px;
+    color:black;
     text-align:center;
+    display:block;
+    margin-top:15px;
 }
 
-section.main p:hover {
-    color:#5661db;
+hr {
+    margin:40px 0px;
 }
 
-.row {
-    display:flex;
+article.news {
+    width: 690px;
 }
 
-.column {
-  flex: 50%;
-  padding: 10px;
-  height: 300px;
+.news img {
+    width:300px;
+    height:200px;
+    margin: 0 15px 0 40px;
+    float:left;
+    transition-property: transform;
+    transition-duration:0.3s;
+    transition-timing-function: ease-in-out;
+    clear:left;
 }
+
+a.title {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size:24px;
+    color:black;
+    text-align:left;
+    display:block;
+    max-width: 300px;
+    float:left;
+    padding-top:50px;
+    
+}
+
+img[src*="lebanon"] , a[href*="lost"], img[src*="thumbnail"], img[src*="ukraine"] {
+    margin-top: 40px; 
+}
+
+div.hover:hover img {
+    transform:scale(1.05)
+}
+
+article.news a:hover, section.main a:hover {
+    color:#ae7b6f;
+    text-decoration-line: underline;
+}
+
+p.title:hover {
+    color:#ae7b6f;
+}
+
+.vl {
+    border-left: 1px solid black;
+    height: 500px;
+    position: absolute;
+    left: 49%;
+    top: 830px;
+}
+
+
+img[src*="thumbnail"] {
+    position:relative;
+    bottom:480px;
+    left:730px;
+}
+
+p.title {
+    position:absolute;
+    right:88px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size:24px;
+    text-align:left;
+    display:block;
+    max-width: 300px;
+}
+
+audio {
+    position:relative;
+    left:730px;
+    top:9px;
+}
+
+img[src*="ukraine"] {
+    position:absolute;
+    left:730px;
+}
+
 
