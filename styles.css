@@ -217,6 +217,20 @@ p a:hover {
     height:600px;
 }
 
+.health {
+	background: url('pics/please.png') no-repeat 0 0;
+	width: 126px;
+	height: 117px;
+    animation: hrt 1s steps(5) infinite;
+    position:relative;
+    left:700px;
+}
+
+@keyframes hrt {
+    from {background-position-x: 0px;}
+    to {background-position-x: -1500px;}
+}
+
 
 /*FOOTER*/
 footer {
@@ -429,5 +443,3 @@ img[src*="ukraine"] {
     position:absolute;
     left:730px;
 }
-
-
