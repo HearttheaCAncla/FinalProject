@@ -102,6 +102,7 @@ nav .active {
     font-family: "Montserrat";
     font-style:normal;
     font-weight: 400;
+    word-spacing: 7px;
 }
 
 .content img {
@@ -124,7 +125,7 @@ nav .active {
     font-size:20px;
 }
 
-span.more {
+.more {
     clear:left;
     background-color:#8A817C;
     color:white;
@@ -141,12 +142,87 @@ span.more {
     background-color:#BCB8B1;
     color:black;
 }
+
 video {
     position:relative;
-    left:690px;
-    bottom:100px;
+    left:119px;
 }
 
+.quiz > h1 {
+    margin: 50px auto;
+    margin-bottom:5px;
+}
+
+.subtext {
+    font-family: "Montserrat";
+    text-align:center;
+    display:block;
+    margin-bottom:30px;
+}
+
+.quiz {
+    background-color:#cfcbc9;
+    margin: auto;
+    margin-bottom:30px;
+    border-radius: 20px;
+    font-family: "Montserrat";
+    overflow:hidden;
+    width:900px;
+}
+
+#qna {
+    text-align:left;
+    position:relative;
+    max-width:90%;
+    left:70px;
+}
+
+#question {
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+button[id^="op"], #nxt {
+    background-color: #b0a9a5;
+    border-radius: 4px;
+    box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+    font-weight: 300;
+    margin: 7px;
+    padding: 13px;
+    border: 0;
+    width:740px;
+    text-align:left;
+}
+
+button[id^="op"]:hover {
+    background-color:#EDEDE9;
+    color:black;
+    transition:0.2s;
+}
+
+button[id^="op"]:focus {
+    box-shadow: #121212 0 0 0 2px, transparent 0 0 0 0;
+    transition:0.5s;
+}
+
+#nxt {
+    background-color:#463F3A;
+    color:white;
+    width:70px;
+    text-align:center;
+    border-radius:4px;
+    padding:10px;
+    font-family: "Montserrat";
+    margin-top:20px;
+    display:none;
+}
+
+#score {
+    font-size:30px;
+    text-align:center;
+    position:relative;
+    top:160px;  
+}
 
 /* FUNDRAISERS */
 h1 {
@@ -240,7 +316,7 @@ footer {
 
 .footerc {
     width:100%;
-    padding:20px 30px 100px;
+    padding:20px 30px 90px;
     
 }
 
@@ -400,7 +476,6 @@ div.hover:hover img {
 
 article.news a:hover, section.main a:hover {
     color:#ae7b6f;
-    text-decoration-line: underline;
 }
 
 p.title:hover {
@@ -443,3 +518,5 @@ img[src*="ukraine"] {
     position:absolute;
     left:730px;
 }
+
+
