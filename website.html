@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body onload="display()">
     <div class="WH">
         <header>
             <h1> One out of the Seventeen SDGs: <br> Zero Hunger </h1>
@@ -30,24 +30,34 @@
 
         <article>
             <h1>PURPOSE</h1>
-                <p> 
+                <p id="desc"> 
                     Even if the world mass-produces quantities of food, more than sufficient to feed everyone on Earth, it is said that up to 783 million people
                     still starve even with the technology and facilities we have now. Factors that may be contributing to food insecurity—which is defined or is
                     more well known as the low accessibility of safe and healthy food in order to sustain a healthy life—are the following: poverty, environmental degradation,
-                    or conflict between countries. <br> Despite knowing these unfortunate circumstances, many take the food served to them for granted since the majority are
+                    or conflict between countries. <br><br> Despite knowing these unfortunate circumstances, many take the food served to them for granted since the majority are
                     financially capable of buying basic needs like food. This leads to normalizing improper practices involving food such as not eating what's on the dining table or
                     throwing away leftovers that hasn't expired. People tend to forget that there are some who haven't eaten in days or even weeks! Which brings to the reason why this
                     website aims to bring light to a current social issue, world hunger.
             </p>
-            <span class="more">Learn More</span>
+            <button type="button" class="more" onclick="vid()">Learn More</button>
         </article>
-        
     </section>
 
-        <span>
-        <video src="vids/learnmore.mp4" width="640" height="360" preload="auto" controls autoplay> your browser does not support html5 video
-        </video>
-        </span>
+    <div class="quiz" style="height:600px;">
+        <h1>Let's Test Your Knowledge!</h1>
+        <i class="subtext">short quiz on SDG 2</i>
+
+        <div id="qna">
+        <h3 id="question"></h3>
+            <button id="op1" class="options" style="font-size:larger;" onclick="result(1)"></button> <br>
+            <button id="op2" class="options" style="font-size:larger;" onclick="result(2)"></button> <br>
+            <button id="op3" class="options" style="font-size:larger;" onclick="result(3)"></button> <br>
+            <button id="op4" class="options" style="font-size:larger;" onclick="result(4)"></button> <br>
+            <button id="nxt" onclick="display()">Next</button>
+        </div>
+        <p id="score"></p>
+    </div>
+
 
         <footer>
             <div class="footerc">
@@ -69,4 +79,6 @@
             </div>
         </footer>
 </body>
+
+<script src="website.js"></script>
 </html>
