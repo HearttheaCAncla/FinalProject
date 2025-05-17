@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Food for the Masses</title>
+    <link rel="stylesheet" href="styles4Q.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+<body>
+    
+    <nav>
+        <img src="pics/icon.png" alt="icon">
+        <p> Food for the Masses </p>
+        <a href=""> About Us </a>
+        <a href="signup.html"> Campaign </a>
+        <a href="donate.html"> Donate Now </a>
+        <a href="news.html"> News & Stories </a>
+        <a href="website.html" class="active"> Home </a>
+    </nav>
+
+    <div class="bg-div">
+    <header>
+        <h1>Sign Up</h1>
+        <h3>End Hunger. Nourish Hope.</h3>
+    </header>
+    
+        <form onsubmit="return check();" action="profile.html">
+            <div class="inputs">
+                <label for="fName">FIRST NAME*</label>
+                <span class="req">
+                <input type="text" id="fName" name="fName" required>
+                <p class="blank"></p>
+                </span>
+            </div>
+                
+            <div class="inputs">
+                <label for="lName">LAST NAME*</label>
+                <span class="req">
+                <input type="text" id="lName" name="lName" required>
+                <p class="blank"></p>
+                </span>
+            </div>
+
+            <div class="radio">
+                <label for="sex">SEX*</label>
+                <label for="male"><input type="radio" id="male" name="sex" value="Male" required>Male</label>
+                <label for="female"><input type="radio" id="female" name="sex" value="Female">Female</label>
+                <span class="req">
+                <label for="prefer"><input type="radio" id="prefer" name="sex" value="Prefer not to say">Prefer not to say</label>
+                <p class="blank"></p>
+                </span>
+            </div>
+
+            <div class="inputs">
+                <label for="email">EMAIL ADDRESS*</label>
+                <span class="req">
+                <input type="text" id="email" name="email" required>
+                <p class="blank"></p>
+                </span>
+            </div>
+
+            <div class="inputs">
+                <label for="pWord">PASSWORD*</label>
+                <span class="req">
+                <input type="password" id="pWord" name="pWord" required>
+                <p class="blank"></p>
+                </span>
+            </div>
+
+            <div class="inputs">
+                <label for="contact">CONTACT</label>
+                <input type="text" id="contact" name="contact">
+            </div>
+
+            <div class="inputs">
+                <label for="reason">REASON*</label>
+                <span class="req">
+                <textarea id="reason" name="reason" rows="4" cols="50" required></textarea>
+                <p class="blank"></p>
+                </span>
+            </div>
+            
+        <input type="submit" value="Sign Up" onclick="check()">
+            
+        </form>
+    </div>
+</body>
+<script src="signprof.js"></script>
+</html>

@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  text-align:center;
+  background-color:#EDEDE9;
+  justify-content: center;
+  align-items: center;   
+}
+
+nav {
+  background-color: #463F3A;
+  overflow:hidden;
+  position:sticky;
+  top:0;
+  font-family: "Montserrat";
+  font-style:normal;
+  font-weight: 400;
+  z-index:999;
+}
+
+nav img {
+  float:left;
+  width:80px;
+  height:80px;
+  transition-property: transform;
+  transition-duration:0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+nav img:hover {
+  transform:rotate(-360deg);
+}
+
+nav p {
+  float:left;
+  color:whitesmoke;
+  font-size:25px;
+}
+
+nav a {
+  padding: 20px;
+  display:block;
+  float:right;
+  color:whitesmoke;
+  text-decoration: none;
+  font-size:20px;
+  line-height:40px;
+  transition-duration: 0.4s;
+}
+
+nav a:hover {
+  background-color:#BCB8B1;
+  color:black;
+}
+
+nav .active {
+  background-color:#8A817C;
+}
+
+.blank {
+  display:inline;
+  color: red;
+  font-size: 0.9em;
+  margin: 0;
+  
+}
+
+.req {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bg-div {
+  background-color:white;
+  padding: 30px;
+  max-width: 400px; 
+  margin: 50px auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+  box-sizing: border-box;
+  margin: 9px; 
+  width: 300px;
+  border: 3px solid #ccc;
+  transition: 0.5s;
+  
+}
+
+input[type=text], input[type=password] {
+  outline: none;
+  border: none;
+  line-height: 1.2em;
+  font-size: 14px;
+  width: 95%;
+}
+
+.inputs:focus-within {
+  border: 3px solid #555;
+}
+
+label {
+  display: block;
+  text-align: left;
+  font-size: 12px;
+}
+
+textarea {
+  outline: none;
+  border: none;
+  font-size: 14px;
+  padding: 6px;
+  width: 100%;
+  height: 80px;
+  box-sizing: border-box;
+  resize:none;
+}
+
+.radio {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+  margin: 10px auto; /* centers it horizontally */
+  padding: 10px;
+  border: 3px solid #ccc;
+  box-sizing: border-box;
+}
+
+h3 {
+  
+  font-weight:normal;
+}
+
+input[type="submit"] {
+  font-size: 1rem;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  background-color:#8A817C;
+  color:white;
+  transition: all 235ms ease-in-out;
+  line-height: .5rem;
+  padding: 15px;
+  font-size:larger;  
+}
+
+input[type="submit"]:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+  background-color:#BCB8B1;
+  color:black;
+}
+
+/*profile*/
+.profile-box {
+  width: 300px;
+  margin: 40px auto;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  padding: 20px;
+  background: white;
+  text-align: center;
+  transition: transform 0.3s ease;
+  overflow-wrap: break-word;
+}
+
+.profile-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.profile-box p {
+  word-break: break-word;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  border: 3px solid #888;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
